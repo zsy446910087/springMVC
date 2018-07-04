@@ -2,9 +2,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>测试modelMap</title>
+<title>测试@RequestMapping注解</title>
 </head>
 <body>
-访问request作用范围域中的Model对象：${user.username!}
+<!-- 页面可以访问Controller传递传递出来的模型User对象 -->
+欢迎[${user.username }]登陆
+<br>
 </body>
 </html>
