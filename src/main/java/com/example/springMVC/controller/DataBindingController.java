@@ -1,8 +1,10 @@
 package com.example.springMVC.controller;
 
+import com.example.springMVC.model.User;
 import org.apache.juli.logging.Log;
 import org.apache.juli.logging.LogFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -44,4 +46,5 @@ public class DataBindingController {
         logger.info("通过@CookieValue获得数据"+sessionID);
 
     }
+
 }
