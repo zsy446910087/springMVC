@@ -5,6 +5,6 @@
 <title>测试modelMap</title>
 </head>
 <body>
-访问request作用范围域中的Model对象：${user.username!}
+访问request作用范围域中的Model对象：${(user.username)! "不存在"}
 </body>
 </html>

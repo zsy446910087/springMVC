@@ -8,12 +8,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 /**
  * @Author:Siyu
  * @Date:Created in 上午8:43 2018/7/5
  */
 @Controller
+@SessionAttributes("user")
 public class SessionAttributesController {
     private static final Log logger= LogFactory.getLog(SessionAttributesController
             .class);
