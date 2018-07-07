@@ -7,11 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 
-/**   
- * @Description: 
- * <br>网站：<a href="http://www.fkit.org">疯狂Java</a> 
- * @author 肖文吉	36750064@qq.com   
- * @version V1.0   
+/**
+ * @Author:Siyu
+ * @Date:Created in 下午2:27 2018/7/7
  */
 
 // Controller注解用于指示该类是一个控制器，可以同时处理多个请求动作
