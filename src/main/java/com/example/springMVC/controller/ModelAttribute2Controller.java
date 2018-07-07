@@ -32,7 +32,7 @@ public class ModelAttribute2Controller{
 
 	@RequestMapping(value="/login2")
 	 public String login2() {
-		 return "result2";
+		 return "result22";
 	 }
 
 }

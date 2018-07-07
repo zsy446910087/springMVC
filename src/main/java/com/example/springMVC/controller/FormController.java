@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class FormController{
 
 	// 该方法映射的请求为http://localhost:8080/ModelAttributeTest/{formName}
-	@RequestMapping(value="/{formName}")
+	@RequestMapping(value="/{formName}", method = { org.springframework.web.bind.annotation.RequestMethod.PUT })
 	 public String loginForm(@PathVariable String formName){
 		// 动态跳转页面
 		return formName;

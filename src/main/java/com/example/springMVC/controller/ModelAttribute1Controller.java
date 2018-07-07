@@ -28,7 +28,7 @@ public class ModelAttribute1Controller{
 
 	@RequestMapping(value="/login1")
 	 public String login1() {
-		 return "result1";
+		 return "result11";
 	 }
 
 }
