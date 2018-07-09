@@ -10,7 +10,7 @@ $(document).ready(function(){
 	testRequestBody();
 });
 function testRequestBody(){
-	 $.ajax("/json/testRequestBody",// 发送请求的URL字符串。
+	 $.ajax("json/testRequestBody",// 发送请求的URL字符串。
 			{
 			dataType : "json", // 预期服务器返回的数据类型。
    			type : "post", //  请求方式 POST或GET
@@ -34,6 +34,7 @@ function testRequestBody(){
 </script>
 </head>
 <body>
+
 编号：<span id="id"></span><br>
 书名：<span id="name"></span><br>
 作者：<span id="author"></span><br>
