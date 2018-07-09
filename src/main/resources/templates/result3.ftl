@@ -6,7 +6,7 @@
 <title>测试@ModelAttribute注释返回具体类的方法</title>
 </head>
 <body>
-访问request作用范围域中的user对象：${Request.user.username }<br>
+访问request作用范围域中的user对象：${(Request.user.username)! "不存在" }<br>
 <br>
 </body>
 </html>
