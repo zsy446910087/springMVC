@@ -23,7 +23,7 @@ public class User1Controller{
         User1 user = new User1("jack","男",28);
         // model中添加属性command，值是user对象
         model.addAttribute("command",user);
-        return "registerForm";
+        return "registerForm1";
     }
 
     @GetMapping(value="/registerForm2")
