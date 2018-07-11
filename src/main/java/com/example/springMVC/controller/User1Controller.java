@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class User1Controller{
 
-    @GetMapping(value="/registerForm")
+    @GetMapping(value="/registerForm1")
     public String registerForm(Model model) {
         User1 user = new User1("jack","男",28);
         // model中添加属性command，值是user对象
