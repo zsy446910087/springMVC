@@ -1,4 +1,4 @@
-
+<#import "/spring.ftl" as spring/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,18 +7,15 @@
 </head>
 <body>
 <h3>form:checkbox测试</h3>
-<form modelAttribute="user2" method="post" action="checkboxForm" >
+<form method="post" action="checkboxesForm" >
 	<table>
 		<tr>
-			<td>选择课程:</td>
-			<td>
-				<input type="checkbox" name="courses" value="JAVAEE" label="JAVAEE"/>&nbsp;
-				<checkbox name="courses" value="Mybatis" label="Mybatis"/>&nbsp;
-				<checkbox path="courses" value="Spring" label="Spring"/>&nbsp;
-			</td>
-		</tr>
+        <td>选择课程:</td>
+        <td>
+             <@spring.formCheckboxes path="user2.courses" options=courseMap separator="<br>"/>
+        </td>
+    </tr>
 	</table>
-	<input type="checkbox"  label="true"/>已经阅读相关协议
 </form>
 </body>
 </html>

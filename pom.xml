@@ -54,11 +54,6 @@
             <artifactId>spring-context-support</artifactId>
             <version>4.3.4.RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>2.3.22</version>
-        </dependency>
 
 		<dependency>
 			<groupId>net.sf.json-lib</groupId>
@@ -108,6 +103,12 @@
 
 			<scope>provided</scope>
 
+		</dependency>
+		<!--security标签 -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>4.2.2.RELEASE</version>
 		</dependency>
 
 		<dependency>
