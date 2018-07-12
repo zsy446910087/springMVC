@@ -1,6 +1,7 @@
 package com.example.springMVC.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**   
  * @Description: 
@@ -47,7 +48,7 @@ public class Dept implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
+
+
 
 }

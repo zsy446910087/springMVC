@@ -72,13 +72,14 @@ public class User2Controller{
         list.add(dept);
         employee.setDepts(list);
         // 页面展现的可供选择的复选框内容deptList
-        List<Dept> deptList = new ArrayList<Dept>();
-        deptList.add(dept);
-        deptList.add(new Dept(2,"销售部"));
-        deptList.add(new Dept(3,"财务部"));
+        Map<Integer, String> deptMap = new HashMap<Integer, String>();
+      //  List<Dept> deptList = new ArrayList<Dept>();
+        deptMap.put(dept.getId(),dept.getName());
+        deptMap.put(2,"销售部");
+        deptMap.put(3,"财务部");
         // model中添加属性employee和deptList
         model.addAttribute("employee",employee);
-        model.addAttribute("deptList",deptList);
+        model.addAttribute("deptMap",deptMap);
         return "checkboxesForm3";
     }
 
