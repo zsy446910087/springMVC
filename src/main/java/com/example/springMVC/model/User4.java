@@ -1,6 +1,7 @@
 package com.example.springMVC.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @Author:Siyu
@@ -9,17 +10,25 @@ import java.io.Serializable;
 
     public class User4 implements Serializable {
 
-        private static final long serialVersionUID = 1L;
+       // private static final long serialVersionUID = 1L;
 
-        private String sex;
-
-        public String getSex() {
-            return sex;
+        //private String sex;
+        private List<String> deptId;
+        public User4(){
+            super();
         }
 
-        public void setSex(String sex) {
-            this.sex = sex;
+        public List<String> getDeptId() {
+            return deptId;
         }
 
+//        public void setDeptId(Integer deptId) {
+//            this.deptId = deptId;
+//        }
+    public void setDeptId(List<String> deptId) {
+        this.deptId = deptId;
     }
+
+
+}
 
